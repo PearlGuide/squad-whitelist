@@ -1,24 +1,22 @@
-import requests
 from flask import Flask, Response
+import requests
 
 app = Flask(__name__)
 
-# Raw GitHub URL of your RemoteAdminListHosts.cfg file
-GITHUB_RAW_URL = "https://raw.githubusercontent.com/PearlGuide/squad-whitelist/main/RemoteAdminListHosts.cfg"
-
-@app.route('/RemoteAdminListHosts.cfg')
-def serve_cfg():
-    try:
-        r = requests.get(GITHUB_RAW_URL)
-        r.raise_for_status()
-        content = r.text
-        return Response(content, mimetype='text/plain')
-    except Exception as e:
-        return Response(f"Error fetching config: {e}", status=500)
+# Direct link to raw remoteadminlist.cfg on GitHub
+GITHUB_RAW_URL = "https://raw.githubusercontent.com/pearlaced/squad-whitelist/main/remoteadminlist.cfg"
 
 @app.route('/')
-def home():
-    return "Squad whitelist server running."
+def serve_whitelist():
+    try:
+        response = requests.get(GITHUB_RAW_URL)
+        if response.status_code == 200:
+            content = response.text
+            return Response(content, mimetype='text/plain')
+        else:
+            return f"Failed to fetch whitelist from GitHub. Status code: {response.status_code}", 500
+    except Exception as e:
+        return f"Error while fetching whitelist: {str(e)}", 500
 
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=8000)
+if __name__ == '__main__':
+    app.run()
