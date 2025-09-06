@@ -2,6 +2,7 @@ from flask import Flask, Response
 import requests
 import logging
 from datetime import datetime
+import os
 
 app = Flask(__name__)
 
@@ -12,7 +13,7 @@ logging.basicConfig(
     format="%(asctime)s - %(message)s",
 )
 
-GITHUB_RAW_URL = "https://raw.githubusercontent.com/<your-username>/<your-repo>/main/RemoteAdminListHosts.cfg"
+GITHUB_RAW_URL = "https://raw.githubusercontent.com/<PearlGuide>/<squad=whitelist>/main/RemoteAdminListHosts.cfg"
 
 @app.route('/RemoteAdminListHosts.cfg')
 def serve_cfg():
@@ -35,3 +36,8 @@ def serve_cfg():
 @app.route('/')
 def index():
     return "Whitelist Server is Running."
+
+
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
