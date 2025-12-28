@@ -1,6 +1,7 @@
 Group=Whitelist:reserve
 
 
+Fourmula
 Admin=76561199384910125:Whitelist // .derozan
 Admin=76561198957852755:Whitelist // bobo0689
 Admin=76561199487017640:Whitelist // slicknick4700
@@ -39,4 +40,3 @@ Admin=76561199473955919:Whitelist // glockguy43x
 Admin=76561197996430459:Whitelist // padre08
 Admin=76561199370191735:Whitelist // justjerry2x
 Admin=76561199749881412:Whitelist // vo004
-Admin=76561198857526369:Whitelist // pearlaced
