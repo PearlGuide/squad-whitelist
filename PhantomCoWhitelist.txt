@@ -39,3 +39,4 @@ Admin=76561199370191735:Whitelist // justjerry2x
 Admin=76561199749881412:Whitelist // vo004
 Admin=76561197994268035:Whitelist // emohugsalot
 Admin=76561198879894757:Whitelist // emohugsalot
+Admin=76561198200228375:Whitelist // rrainwater
