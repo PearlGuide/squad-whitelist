@@ -39,3 +39,4 @@ Admin=76561197994268035:Whitelist // emohugsalot
 Admin=76561198879894757:Whitelist // emohugsalot
 Admin=76561198200228375:Whitelist // rrainwater
 Admin=76561198321036837:Whitelist // marxome
+Admin=76561199473955919:Whitelist // glockguy43x
