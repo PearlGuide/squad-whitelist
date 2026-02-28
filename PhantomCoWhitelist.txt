@@ -39,3 +39,4 @@ Admin=76561199473955919:Whitelist // glockguy43x
 Admin=76561199141990824:Whitelist // almente
 Admin=76561198360355036:Whitelist // minty9655
 Admin=76561198077649419:Whitelist // chillcanadian
+Admin=76561198110448580:Whitelist // popcots
