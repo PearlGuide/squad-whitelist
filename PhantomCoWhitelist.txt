@@ -14,7 +14,6 @@ Admin=76561198283834691:Whitelist // icytyson.
 Admin=76561199205534966:Whitelist // mangowater_
 Admin=76561198437727559:Whitelist // itsworst
 Admin=76561198196679122:Whitelist // itsworst
-Admin=76561198287905746:Whitelist // sebiiv
 Admin=76561197971767498:Whitelist // scotydog
 Admin=76561198066113403:Whitelist // sagendabank
 Admin=76561198972520653:Whitelist // momoxxy
